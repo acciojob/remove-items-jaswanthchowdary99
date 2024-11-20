@@ -6,4 +6,5 @@ removeColor.addEventListener('click',function(){
 	if(colorIndex !== -1){
 		colorSelect.remove(colorIndex);
 	}
+	colorSelect.dispatchEvent(new Event('change'));
 })
