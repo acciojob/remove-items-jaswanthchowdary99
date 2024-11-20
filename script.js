@@ -2,8 +2,8 @@
 let removeColor = document.querySelector('input[type="button"]')
 removeColor.addEventListener('click',function(){
 	let colorSelect = document.getElementById('colorSelect');
-	let colorIndex = colorSelect.SelectedIndex;
+	let colorIndex = colorSelect.selectedIndex;
 	if(colorIndex !== -1){
-		colorSelect.remove(colorIndex);
+		colorSelect.options[colorIndex].remove();
 	}
 })
